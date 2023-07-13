@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+<form action="">
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail">
+    <br>
+    <label for="pw">Password</label>
+    <input type="password" name="pw" id="pw">
+    <br>
+    <label for="first-name">Fist Name</label>
+    <input type="text" name="first-name" id="first-name">
+    <br>
+    <label for="bday">Date of Birth</label>
+    <input type="date" name="bday" id="bday">
+    <br>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+    <br>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+    <br>
+    <label for="plans">Plans</label>
+    <input type="radio" name="plans" id="plan1"> Plan1
+    <input type="radio" name="plans" id="plan2"> Plan2
+    <input type="radio" name="plans" id="plan3"> Plan3
+    <br>
+    <label for="proplan">Pro Plan</label>
+    <input type="checkbox" name="proplan" id="proplan"> Pro plan
+    <br>
+    <label for="cc">Credit Card Number</label>
+    <input type="text" name="cc" maxlength="16" pattern="/^[0-9]*$/">
+    <br>
+    <label for="ccv">CCV</label>
+    <input type="text" name="ccv" maxlength="3" pattern="/^[0-9]*$/">
+    <br>
+    <label for="expdate">Expiration date</label>
+    <input type="number" min="1" max="12"> / 
+    <input type="number" min="1" max="31">
+    <br>
+    <label for="adress">Adress</label>
+    <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+  </body>
+</html>
