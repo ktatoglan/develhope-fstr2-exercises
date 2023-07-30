@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "g g g"
+    "y r b"
+    "o o b";
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
