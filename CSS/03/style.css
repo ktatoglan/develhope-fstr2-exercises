@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #474646;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 4px;
+}
+
+nav a:first-of-type{
+    margin: 0px 8px;
+    font-size: 22px;
+}
+
+nav input{
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+nav button {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid teal;
+    color: teal;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (width <= 768px){
+    nav * {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        padding: 0px 8px;
+        background-color: teal;
+        color: #474646;
+    }
+}
