@@ -7,7 +7,7 @@ class Person {
 
 class Developer extends Person {
   constructor(firstName, lastName, role) {
-    super(firstName, lastName); // Call the constructor of the parent class (Person)
+    super(firstName, lastName);
     this.role = role;
   }
 }
