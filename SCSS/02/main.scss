@@ -1,0 +1,45 @@
+@mixin article-card($color, $bordercolor, $fontsize: 1rem) {
+    color: $color;
+    border: 1px solid $bordercolor;
+    font-size: $fontsize;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 1rem;
+
+    h1{
+        color: green;
+        border-bottom: 1px solid blue;
+        width: fit-content;
+        margin: 10px auto;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+
+        article{
+            padding: 1rem;
+
+            &:nth-child(odd){
+                @include article-card(red, green);
+            }
+            &:nth-child(even){
+                @include article-card(green, red);
+            }
+        }
+        &:last-of-type{
+            margin-top: 20px;
+            
+            article{
+                @include article-card(blue, green, 24px);
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+}

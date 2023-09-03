@@ -1,0 +1,28 @@
+.container {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+.container .title {
+  color: green;
+  border-bottom: 1px solid blue;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+}
+.container .row {
+  display: flex;
+}
+.container .row .col {
+  width: 25%;
+  border: 1px solid green;
+  padding: 25px;
+}
+.container .row .col:nth-child(odd) {
+  color: red;
+}
+.container .row .col:nth-child(even) {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
